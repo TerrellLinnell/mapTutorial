@@ -32,24 +32,18 @@ With the `map()` method you can also pass in other functions as its parameter
 * create a new array of objects that are people
 ```
 var people = [
-
-    {firstName: 'Bill', lastName:'Hadley', membership: 'Gold'},
-
+    {firstName: 'Bill', lastName: 'Hadley', membership: 'Gold'},
+    {firstName: 'George', lastName: 'Stevenson', membership: 'Silver'},
   ];
 ```
   create a few more people using this template
 * create a function that will change all memberships to gold
 ```
 function ChangeSilverToGold () {
-
   people.map(function (item) {
-
       item.membership ='Gold';
-
       console.log('First Name: ' + item.firstName + ', ' + 'Membership: ' + item.membership);
-
   });
-
 };
 ```
 
@@ -60,16 +54,12 @@ function ChangeSilverToGold () {
   we used an anonymous function as the map parameter but we could do this instead...
 ```
 function mapCallback () {
-
     return some code for the map function to add to each item in the array;
+}
 
-  }
-
-  function addSomething () {
-
-    array.map(mapCallback)
-
-  };
+function addSomething () {
+  array.map(mapCallback)
+};
   ```
 * commit this step to github
 * that is the basics of the map function, you can add something to each item in an array while creating a new array of those new items,
