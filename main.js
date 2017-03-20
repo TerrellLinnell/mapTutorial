@@ -23,8 +23,8 @@ function ChangeAllToGold () {
           membership: 'Gold'
         }
       )
-      console.log('First Name: ' + item.firstName + ', ' + 'Last Name: ' + item.lastName + ', ' + 'Membership: ' + item.membership);
   });
+  return newPeople;
 };
 
-ChangeAllToGold();
+console.log(ChangeAllToGold());

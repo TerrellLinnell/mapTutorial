@@ -48,12 +48,13 @@ function ChangeAllToGold () {
           membership: 'Gold'
         }
       )
-      console.log('First Name: ' + item.firstName + ', ' + 'Last Name: ' + item.lastName + ', ' + 'Membership: ' + item.membership);
   });
+  return newPeople;
 };
+
+console.log(ChangeAllToGold());
 ```
 
-* do not forget to call the function at the bottom of your file `ChangeSilverToGold()`
 * run this in your console to see the result, all the memberships should now be gold
 
 * you can either use a callback function in map or use an anonymous function, in the example above
