@@ -20,11 +20,11 @@
 * type `git push origin master` this will push your code up to github
 
 ## step 3: using the map function
-* create an array of number 1 through 9 `var numbers = [4, 9, 16, 25, 36, 49, 64]`
+* create an array of numbers`var numbers = [4, 9, 16, 25, 36, 49, 64]`
 * create a variable `squareRoot` that maps the function and returns the square root of the numbers in the numbers array
   `var squareRoot = numbers.map(Math.sqrt);`,  `Math.sqrt` is a predefined function in javascript that finds the square root of a number
 * log the result to the console `console.log(squareRoot);`
-* commit this step to github using `git commit`
+* commit this step to github using `git status`, `git add -A`, `git commit -m "(commit message)"`, and `git push origin master`
 
 ##step 4: more in depth mapping
 *
