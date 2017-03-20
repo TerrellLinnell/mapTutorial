@@ -14,11 +14,17 @@ var people = [
 ];
 
 
-function ChangeSilverToGold () {
-  people.map(function (item) {
-      item.membership ='Gold';
-      console.log('First Name: ' + item.firstName + ', ' + 'Membership: ' + item.membership);
+function ChangeAllToGold () {
+  var newPeople = people.map(function (item) {
+      return (
+        {
+          firstName: item.firstName,
+          lastName: item.lastName,
+          membership: 'Gold'
+        }
+      )
+      console.log('First Name: ' + item.firstName + ', ' + 'Last Name: ' + item.lastName + ', ' + 'Membership: ' + item.membership);
   });
 };
 
-ChangeSilverToGold();
+ChangeAllToGold();
