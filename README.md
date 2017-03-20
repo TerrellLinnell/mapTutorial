@@ -37,10 +37,15 @@ With the `map()` method you can also pass in other functions as its parameter
 * create a function that will change all memberships to gold
 
 `function ChangeSilverToGold () {
+
   people.map(function (item) {
+
       item.membership ='Gold';
+
       console.log('First Name: ' + item.firstName + ', ' + 'Membership: ' + item.membership);
+
   });
+
 };`
 
 * do not forget to call the function at the bottom of your file `ChangeSilverToGold()`
@@ -49,12 +54,16 @@ With the `map()` method you can also pass in other functions as its parameter
 * you can either use a callback function in map or use an anonymous function, in the example above
   we used an anonymous function as the map parameter but we could do this instead...
 
-` function mapCallback () {
+`function mapCallback () {
+
     return some code for the map function to add to each item in the array;
+
   }
 
   function addSomething () {
+
     array.map(mapCallback)
+    
   };`
 
 * commit this step to github
