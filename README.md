@@ -24,30 +24,39 @@
 * create a variable `squareRoot` that maps the function and returns the square root of the numbers in the numbers array
   `var squareRoot = numbers.map(Math.sqrt);`,  `Math.sqrt` is a predefined function in javascript that finds the square root of a number
 * log the result to the console `console.log(squareRoot);`
+* to run your file type `node main.js`
 * commit this step to github using `git status`, `git add -A`, `git commit -m "(commit message)"`, and `git push origin master`
 
 ##step 4: more in depth mapping
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
-*
+With the `map()` method you can also pass in other functions as its parameter
+* create a new array of objects that are people
+  `var people = [
+    {firstName: 'Bill', lastName:'Hadley', membership: 'Gold'},
+  ];`
+  create a few more people using this template
+* create a function that will change all memberships to gold
+
+`function ChangeSilverToGold () {
+  people.map(function (item) {
+      item.membership ='Gold';
+      console.log('First Name: ' + item.firstName + ', ' + 'Membership: ' + item.membership);
+  });
+};`
+
+* do not forget to call the function at the bottom of your file `ChangeSilverToGold()`
+* run this in your console to see the result, all the memberships should now be gold
+
+* you can either use a callback function in map or use an anonymous function, in the example above
+  we used an anonymous function as the map parameter but we could do this instead...
+
+` function mapCallback () {
+    return some code for the map function to add to each item in the array;
+  }
+
+  function addSomething () {
+    array.map(mapCallback)
+  };`
+
+* commit this step to github
+* that is the basics of the map function, you can add something to each item in an array while creating a new array of those new items,
+  I hope this helped, best of luck to you!!!😁😁😁😁😁😁😁😁
