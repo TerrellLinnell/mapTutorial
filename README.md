@@ -30,17 +30,17 @@
 ## Step 4: more in depth mapping
 With the `map()` method you can also pass in other functions as its parameter
 * create a new array of objects that are people
-
-`  var people = [
+```
+var people = [
 
     {firstName: 'Bill', lastName:'Hadley', membership: 'Gold'},
 
-  ];`
-
+  ];
+```
   create a few more people using this template
 * create a function that will change all memberships to gold
-
-`function ChangeSilverToGold () {
+```
+function ChangeSilverToGold () {
 
   people.map(function (item) {
 
@@ -50,15 +50,16 @@ With the `map()` method you can also pass in other functions as its parameter
 
   });
 
-};`
+};
+```
 
 * do not forget to call the function at the bottom of your file `ChangeSilverToGold()`
 * run this in your console to see the result, all the memberships should now be gold
 
 * you can either use a callback function in map or use an anonymous function, in the example above
   we used an anonymous function as the map parameter but we could do this instead...
-
-`function mapCallback () {
+```
+function mapCallback () {
 
     return some code for the map function to add to each item in the array;
 
@@ -69,7 +70,7 @@ With the `map()` method you can also pass in other functions as its parameter
     array.map(mapCallback)
 
   };
-`
+  ```
 * commit this step to github
 * that is the basics of the map function, you can add something to each item in an array while creating a new array of those new items,
   I hope this helped, best of luck to you!!!😁😁😁😁😁😁😁😁
