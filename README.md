@@ -30,7 +30,7 @@
 ## Step 4: more in depth mapping
 With the `map()` method you can also pass in other functions as its parameter
 * create a new array of objects that are people
-```
+```javascript
 var people = [
     {firstName: 'Bill', lastName: 'Hadley', membership: 'Gold'},
     {firstName: 'George', lastName: 'Stevenson', membership: 'Silver'},
@@ -38,7 +38,7 @@ var people = [
 ```
   create a few more people using this template
 * create a function that will change all memberships to gold
-```
+``` javascript
 function ChangeSilverToGold () {
   people.map(function (item) {
       item.membership ='Gold';
@@ -52,7 +52,7 @@ function ChangeSilverToGold () {
 
 * you can either use a callback function in map or use an anonymous function, in the example above
   we used an anonymous function as the map parameter but we could do this instead...
-```
+```javascript
 function mapCallback () {
     return some code for the map function to add to each item in the array;
 }
